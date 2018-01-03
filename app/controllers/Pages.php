@@ -1,4 +1,5 @@
 <?php
+// This controller fasciliates page navigation.
 class Pages extends Controller
 {
   public function __construct()
