@@ -99,12 +99,48 @@ class Pages extends Controller
    * Replace \_EXAMPLE\_ with your site directory.
    * This folder should be the direct parent of /public
 
-3) To use the example MV:
+3) To **use** the example MV:
 
    * Create a MySQL database in phpmyadmin using the same name used in the config file.
    * Add a 'posts' table to the database. Posts should have an id and a title column. The id is typically set to auto-increment (AI) and primary index.
 
-4) To remove the example MV:
+4) To **remove** the example MV:
    * Delete /app/models/Post.php
    * Delete /app/views/pages/about.php
    * Delete /public/css/style.css
+
+## Project Structure
+
+```
+.
+├── README.md
+├── app
+│   ├── bootstrap.php
+│   ├── config
+│   │   └── config.php
+│   ├── controllers
+│   │   └── Pages.php
+│   ├── helpers
+│   ├── libraries
+│   │   ├── Controller.php
+│   │   ├── Core.php
+│   │   └── Database.php
+│   ├── models
+│   │   └── Post.php
+│   └── views
+│       ├── inc
+│       │   ├── footer.php
+│       │   └── header.php
+│       └── pages
+│           ├── about.php
+│           └── index.php
+└── public
+    ├── css
+    │   └── style.css
+    ├── img
+    ├── index.php
+    └── js
+        └── main.js
+
+13 directories, 15 files
+```
